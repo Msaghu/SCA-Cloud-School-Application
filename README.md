@@ -49,9 +49,12 @@ Common commands:
 
 1. `docker pull` > downloads an image from the Docker Registry.
 2. `docker run` > runs a container from an image. This commands does 2 things at once; - downloads an image from the Registry - then runs a container from the image.
-3. `docker ps` > shows all running containers.
-4. `docker ps -a` > shows all containers; both running and stopped.
-5. `docker images` > shows all images available locally on our docker host.
+3. `docker run -p 8081:80 -d imagename` > runs a container from an image and maps the container port to 8081 on a detached mode i.e the container will continue running in the background.
+4. `docker port containerID` > shows the port that the container is mapped to.
+5. `docker ps` > shows all running containers.
+6. `docker ps -a` > shows all containers; both running and stopped.
+7. `docker images` > shows all images available locally on our docker host.
+8. 
 
 A Dockerfile that displays a web page
 Deploying a static website as a container
