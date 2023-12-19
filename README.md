@@ -8,7 +8,7 @@ What is a Docker container?
 
 What is a Docker image?
 
-Installing Docker on local machine:
+Check if Docker is installed on local machine:
 `docker`
 
 To check the docker version, run
@@ -45,7 +45,7 @@ Server: Docker Desktop 4.26.1 (131620)
   GitCommit:        de40ad0
 ```
 
-Common commands:
+### Common Docker commands:
 
 1. `docker pull` > downloads an image from the Docker Registry.
 2. `docker run` > runs a container from an image. This commands does 2 things at once; - downloads an image from the Registry - then runs a container from the image.
@@ -54,7 +54,10 @@ Common commands:
 5. `docker ps` > shows all running containers.
 6. `docker ps -a` > shows all containers; both running and stopped.
 7. `docker images` > shows all images available locally on our docker host.
-8. 
+   
+
+### Differences between RUN and CMD
+RUN is for defining the commands that have to run during the build process to create an image and CMD is to define which command should be executed when you finally start the container from the existing image
 
 A Dockerfile that displays a web page
 Deploying a static website as a container
